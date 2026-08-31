@@ -1,0 +1,31 @@
+name: veda_pages
+publish_to: none
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 共享 Dart 依赖
+  models:
+    git:
+      url: git@github.com:your-username/veda-shared.git
+      path: dart/models
+      ref: main
+
+  app_config:
+    git:
+      url: git@github.com:your-username/veda-shared.git
+      path: dart/app_config
+      ref: main
+
+  # 共享 Flutter UI 依赖
+  ranking:
+    git:
+      url: git@github.com:your-username/veda-shared.git
+      path: flutter/stock/ranking
+      ref: main
+
+  # ... 其他所需依赖同理
