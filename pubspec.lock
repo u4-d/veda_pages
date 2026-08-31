@@ -202,11 +202,9 @@ packages:
   models:
     dependency: "direct main"
     description:
-      path: "dart/models"
-      ref: main
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/dart/models"
+      relative: true
+    source: path
     version: "1.0.0"
   my_analyzer:
     dependency: transitive

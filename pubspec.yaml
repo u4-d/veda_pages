@@ -31,36 +31,3 @@ dependencies:
       url: git@github.com:u4-d/veda_shared.git
       path: dart/my_supabase_service
       ref: main
-
-# 补全所有 shared 库里的传递依赖
-dependency_overrides:
-  models:
-    git:
-      url: git@github.com:u4-d/veda_shared.git
-      path: dart/models
-      ref: main
-  app_config:
-    git:
-      url: git@github.com:u4-d/veda_shared.git
-      path: dart/app_config
-      ref: main
-  my_logger:
-    git:
-      url: git@github.com:u4-d/veda_shared.git
-      path: dart/my_logger
-      ref: main
-  my_supabase_service: # <-- 补上这一项！
-    git:
-      url: git@github.com:u4-d/veda_shared.git
-      path: dart/my_supabase_service
-      ref: main
-  ranking: # <-- 补上这一项！
-    git:
-      url: git@github.com:u4-d/veda_shared.git
-      path: flutter/stock/ranking
-      ref: main
-  utils:
-    git:
-      url: git@github.com:u4-d/veda_shared.git
-      path: dart/utils
-      ref: main
