@@ -4,11 +4,9 @@ packages:
   app_config:
     dependency: "direct main"
     description:
-      path: "dart/app_config"
-      ref: main
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/dart/app_config"
+      relative: true
+    source: path
     version: "1.0.0"
   async:
     dependency: transitive
@@ -207,31 +205,25 @@ packages:
     source: path
     version: "1.0.0"
   my_analyzer:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      path: "dart/my_analyzer"
-      ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/dart/my_analyzer"
+      relative: true
+    source: path
     version: "1.0.0"
   my_logger:
     dependency: "direct overridden"
     description:
-      path: "dart/my_logger"
-      ref: main
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/dart/my_logger"
+      relative: true
+    source: path
     version: "1.0.0"
   my_supabase_service:
     dependency: "direct main"
     description:
-      path: "dart/my_supabase_service"
-      ref: main
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/dart/my_supabase_service"
+      relative: true
+    source: path
     version: "0.0.1"
   path:
     dependency: transitive
@@ -260,11 +252,9 @@ packages:
   ranking:
     dependency: "direct main"
     description:
-      path: "flutter/stock/ranking"
-      ref: main
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/flutter/stock/ranking"
+      relative: true
+    source: path
     version: "0.0.1"
   realtime_client:
     dependency: transitive
@@ -354,11 +344,9 @@ packages:
   utils:
     dependency: "direct overridden"
     description:
-      path: "dart/utils"
-      ref: main
-      resolved-ref: "149f88ddf032ecdf9184d724fb3979f125da4e93"
-      url: "git@github.com:u4-d/veda_shared.git"
-    source: git
+      path: "../../private/shared/dart/utils"
+      relative: true
+    source: path
     version: "1.0.0"
   vector_math:
     dependency: transitive

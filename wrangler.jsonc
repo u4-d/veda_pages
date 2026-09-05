@@ -2,6 +2,6 @@
   "name": "veda-pages",
   "compatibility_date": "2026-08-28",
   "assets": {
-    "directory": "veda_pages/build/web"
+    "directory": "build/web"
   }
 }
