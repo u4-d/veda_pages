@@ -52,14 +52,8 @@ class _VedaPagesAppState extends State<VedaPagesApp> {
           seedColor: seedColor,
           brightness: Brightness.light,
         ),
-        cardTheme: const CardThemeData(
-          elevation: 1,
-          margin: EdgeInsets.zero,
-        ),
-        appBarTheme: const AppBarTheme(
-          centerTitle: false,
-          elevation: 0,
-        ),
+        cardTheme: const CardThemeData(elevation: 1, margin: EdgeInsets.zero),
+        appBarTheme: const AppBarTheme(centerTitle: false, elevation: 0),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
@@ -67,14 +61,8 @@ class _VedaPagesAppState extends State<VedaPagesApp> {
           seedColor: seedColor,
           brightness: Brightness.dark,
         ),
-        cardTheme: const CardThemeData(
-          elevation: 1,
-          margin: EdgeInsets.zero,
-        ),
-        appBarTheme: const AppBarTheme(
-          centerTitle: false,
-          elevation: 0,
-        ),
+        cardTheme: const CardThemeData(elevation: 1, margin: EdgeInsets.zero),
+        appBarTheme: const AppBarTheme(centerTitle: false, elevation: 0),
       ),
       home: VedaMainDashboard(
         supabaseService: widget.supabaseService,
@@ -224,10 +212,7 @@ class _VedaMainDashboardState extends State<VedaMainDashboard> {
                 ),
                 const VerticalDivider(thickness: 1, width: 1),
                 Expanded(
-                  child: IndexedStack(
-                    index: _selectedIndex,
-                    children: _pages,
-                  ),
+                  child: IndexedStack(index: _selectedIndex, children: _pages),
                 ),
               ],
             ),
@@ -235,10 +220,7 @@ class _VedaMainDashboardState extends State<VedaMainDashboard> {
         } else {
           // 移动端/窄屏模式：底部 NavigationBar
           return Scaffold(
-            body: IndexedStack(
-              index: _selectedIndex,
-              children: _pages,
-            ),
+            body: IndexedStack(index: _selectedIndex, children: _pages),
             bottomNavigationBar: NavigationBar(
               selectedIndex: _selectedIndex,
               onDestinationSelected: (index) {
@@ -270,4 +252,3 @@ class _VedaMainDashboardState extends State<VedaMainDashboard> {
     );
   }
 }
-
